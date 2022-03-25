@@ -1,7 +1,7 @@
 import Remark
 
 slideshowdir = Remark.slideshow(
-    "julia_presentation",
+    ".", # project's directory
     title = "Git & Github",
     documenter = false,
     options = Dict("ratio" => "4:3"),
