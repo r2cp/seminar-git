@@ -109,11 +109,6 @@ background-image: url(assets/img/git_terminal.png)
 background-size: 100%
 
 ---
-class: center, middle, inverse
-
-# .larger[JARGON]
-
----
 class: center, middle
 
 # Wait, should I even use this?
@@ -121,7 +116,9 @@ class: center, middle
 ---
 class: inverse, center, middle
 
-# .larger[Yes<br>I'll give you 5 reasons why]
+# .larger[Yes!]
+
+# .largish[I'll give you 5 reasons why]
 
 ---
 class: inverse, center, middle
@@ -167,7 +164,9 @@ background-size: 100%
 class: left, middle
 
 # When you .blue[commit] a file or set of files,<br>Git will save some information automatically.
+
 --
+
 # 1. Who
 
 # 2. When
