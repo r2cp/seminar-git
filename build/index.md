@@ -10,13 +10,7 @@ Rodrigo Chang
 *La siguiente presentación fue modificada con base en el repositorio* https://github.com/bcjaeger/seminar-git.
 
 ---
-class: center, middle, inverse
-
-# .larger[DISCLAIMERS]
-
----
-
-# I am recycling materials
+# Reciclando materiales
 
 - Byron C. Jaeger: [Git seminar](https://github.com/bcjaeger/seminar-git) (slides)
 
@@ -24,17 +18,13 @@ class: center, middle, inverse
 
 - Jenny Bryan:
 
-    + [Rstudio::conf 2017](https://www.rstudio.com/resources/rstudioconf-2017/happy-git-and-gihub-for-the-user-tutorial/) (full tutorial with demos)
-    
     + [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159v2/) (article)
-    
-    + [useR! 2019](https://www.youtube.com/watch?v=ZCeBnQBQ1h8) (quick tutorial with demo; see 10:44 - 14:35)
     
     + [Happy Git with R, 2021](https://happygitwithr.com/) (full textbook)
     
 <br>
 
-Why? Because these materials are _fantastic_. Don't re-invent the wheel.
+¿Por qué? Porque estos materiales son *fantásticos*, libres y porque Git nos permite construir a partir de ellos.
 
 ---
 
@@ -45,33 +35,32 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-# .larger[What is Git]
+# .larger[¿Qué es Git?]
 
 ---
 class: middle 
 
-# Git is a .blue[version control system]
+# Git es un .blue[sistema de control de versiones]
+- Es una aplicación que se ejecuta en la computadora, tal como Microsoft Word o Google Chrome. 
+- Su propósito original es ayudar a grupos de desarrolladores a trabajar de manera .blue[colaborativa] en .blue[grandes proyectos de software].
 
-- It is an application that runs on your computer, just like Microsoft Word or Google Chrome.
-
-- Its original purpose was to help groups of developers work collaboratively on big software projects. 
 
 ---
 class: inverse, center, middle
 
-# .larger[What does<br/>Git do]
+# .larger[¿Qué hace Git?]
 
 ---
 class: middle
 
-# Git manages the evolution of a set of files (.blue[repository])
+# Git administra la evolución de un conjunto de archivos (un .blue[repositorio]) 
 
-Imagine “Track Changes” from Microsoft Word on a whole directory instead of just one file.
+Imagina la opción de "Seguimiento de cambios" de Microsoft Word sobre un directorio entero, en vez de un único archivo.
 
 ---
 class: inverse, center, middle
 
-# .larger[Who made Git?]
+# .larger[¿Quién inventó Git?]
 
 ---
 background-image: url(assets/img/Linus_Torvalds_1.jpg)
@@ -79,30 +68,30 @@ background-image: url(assets/img/Linus_Torvalds_1.jpg)
 ---
 class: inverse, center, middle
 
-# .larger[Git for<br/>data science]
+# .larger[Git para<br/>investigación]
 
 ---
 class: left, middle
 
-# Git (with the help of GitHub) has been repurposed for activities other than software development, such as
+# Git (con la ayuda de Github) han sido utilizado para otras actividades más allá del desarrollo de *software*
 
-# [writing books](https://github.com/hadley/r4ds)
+# [Escribir libros](https://github.com/hadley/r4ds)
 
-# [managing personal websites](https://github.com/rbind/apreshill)
+# [Crear sitios web personales](https://github.com/rbind/apreshill)
 
-# [writing scientific articles](https://github.com/bcjaeger/ACC-AHA-BP-guideline-groups)
+# [Escribir artículos científicos](https://github.com/bcjaeger/ACC-AHA-BP-guideline-groups)
 
 ---
 class: inverse, center, middle
 
-# .larger[Git for<br/>beginners]
+# .larger[Git para<br/>principiantes]
 
 ---
 background-image: url(assets/img/Linus_Torvalds_2.jpg)
 background-size: 100%
 class: left, middle, inverse
 
-# .larger[is<br>unfriendly]
+# .larger[no es<br>nada amistoso]
 
 ---
 background-image: url(assets/img/git_terminal.png)
@@ -111,32 +100,32 @@ background-size: 100%
 ---
 class: center, middle
 
-# Wait, should I even use this?
+# Espera, ¿entonces, debería utilizar esto?
 
 ---
 class: inverse, center, middle
 
-# .larger[Yes!]
+# .larger[¡Sí!]
 
-# .largish[I'll give you 5 reasons why]
+# .largish[Veamos 5 razones de por qué]
 
 ---
 class: inverse, center, middle
 
-# .larger[1) Git lets you tell the story of your project]
+# 1) Git permite revisar la historia de tu proyecto 
 
 ---
 class: middle
 
-# Git takes snapshots of all the files in a folder
+# Git toma capturas de todos los archivos de un directorio
 
-# This folder is called a .blue[repository] or .blue[repo]
+# Este directorio es llamado .blue[repositorio] 
 
 ---
 
 class: middle
 
-# When you want to take a snapshot of a file or files, you create a .blue[commit].
+# Cuando deseamos crear una captura del repositorio, creamos un .blue[commit].
 
 ---
 background-image: url(assets/img/file_management_1.png)
@@ -163,18 +152,18 @@ background-size: 100%
 ---
 class: left, middle
 
-# When you .blue[commit] a file or set of files,<br>Git will save some information automatically.
+# Cuando creas un .blue[commit] de un archivo (o archivos),<br>Git guardará alguna información automáticamente.
 
 --
 
-# 1. Who
+# 1. Quién
 
-# 2. When
+# 2. Cuándo
 
 ---
 class: center, middle
 
-# You can add more information about the changes you made with a .blue[commit message].
+# Puedes agregar más información acerca de los cambios con un .blue[mensaje de commit].
 
 ---
 background-image: url(assets/img/file_management_8.png)
@@ -192,49 +181,49 @@ background-size: 100%
 ---
 class: left, middle
 
-# .blue[Repository] - your project folder
+# .blue[Repositorio] - el directorio del proyecto
 
-# .blue[Commit] - save a snapshot
+# .blue[Commit] - guardar una captura
 
 ---
 class: inverse, center, middle
 
-# .larger[2) Git lets you time travel]
+# .larger[2) ¡Git permite viajar en el tiempo!]
 
 ---
 class: left, middle
 
-# Once you've saved some snapshots of your repository, git lets you travel through them
+# Una vez guardadas las capturas del repositorio, Git permite navegar a través de ellas
 
 ---
 background-image: url(assets/img/file_management_12.png)
 background-size: 90%
 
-# Git stores the whole history of your project
+# Git guarda la historia completa del proyecto
 
 ---
 background-image: url(assets/img/file_management_13.png)
 background-size: 90%
 
-# Each of these commits has an identifier called a .blue[hash]
+# Cada uno de estos commits tiene un identificador llamado .blue[hash]
 
 ---
 
 class: left, middle
 
-# Getting the files from a commit in the past is known as doing a .blue[check out]
+# Navegar en los archivos de un *commit* anterior es conocido como realizar un .blue[check-out]
 
 ---
 background-image: url(assets/img/file_management_14.png)
 background-size: 90%
 
-# I can tell Git what commit I want to check out using the commit hash.
+# Podemos indicar a Git qué *commit* deseamos navegar con el *hash* del commit.
 
 ---
 background-image: url(assets/img/file_management_15.png)
 background-size: 90%
 
-# I can tell Git what commit I want to check out using the commit hash.
+# Podemos indicar a Git qué *commit* deseamos navegar con el *hash* del commit.
 
 ---
 background-image: url(assets/img/file_management_15.png)
@@ -245,56 +234,56 @@ background-size: 90%
 ---
 class: left, middle
 
-# .blue[hash] - a computer generated id
+# .blue[hash] - un identificador generado por Git
 
-# .blue[check out] - time travel to a specific commit
+# .blue[check out] - viajar en el tiempo a un *commit* específico
 
 ---
 class: inverse, center, middle
 
-# .larger[3) Git lets you experiment]
+# .larger[3) Git te permite experimentar]
 
 ---
 class: left, middle
 
-# So far, everything has been linear and neat.
+# Hasta ahora, todo ha sido lineal y simple
 
 ---
 class: left, middle
 
-# This isn't really how projects develop.
+# Sin embargo, esta no es la forma en que se desarrollan proyectos.
 
-# Sometimes you want to experiment.
+# A veces, .blue[necesitamos experimentar].
 
-# Sometimes your experiments don't work.
-
----
-class: left, middle
-
-# In Git, you can create easily discardable experiments with .blue[branches]
+# A veces los experimentos no funcionan.
 
 ---
 class: left, middle
 
-# A .blue[branch] is a moveable label attached to a single commit
+# En Git, podemos crear experimentos descartables con las .blue[ramas]
+
+---
+class: left, middle
+
+# Una .blue[rama] es una etiqueta asignada a un commit individual.
 
 ---
 background-image: url(assets/img/file_management_16.png)
 background-size: 100%
 
-# The default branch name in git is .blue[master (or main)]
+# La rama por defecto en Git es usualmente .blue[master (o main)]
 
 ---
 background-image: url(assets/img/file_management_17.png)
 background-size: 100%
 
-# You can add your own branches too
+# Es posible crear nuestras propias ramas
 
 ---
 background-image: url(assets/img/file_management_18.png)
 background-size: 100%
 
-# A user will often do a lot of work on a branch
+# Un usuario realizará usualmente mucho trabajo en una rama. 
 
 ---
 background-image: url(assets/img/file_management_19.png)
@@ -304,35 +293,33 @@ background-size: 100%
 ---
 class: left, middle
 
-# Branches are useful for trying things out.
+# Las ramas son muy .blue[útiles] para probar nuevas funcionalidades.
 
-# They are easy to throw away if you don't like the changes.
-
+# Son fáciles de descartar si los cambios no nos parecen.
 ---
 class: left, middle
 
-# Once projects are up and running, most development is done in branches.
+# Una vez los proyectos están funcionando, la mayoría del desarrollo se hace en ramas.
 
-# The main branch is the 'live' version.
-
+# La rama principal (main) es la versión "en vivo".
 ---
 class: left, middle
 
-# When you are happy with the changes you made in a branch, you need a way to get those changes back into the main branch.
+# Cuando los cambios en una rama son satisfactorios, necesitamos una forma de incorporarlos nuevamente a la rama principal. 
 
 ---
 background-image: url(assets/img/file_management_20.png)
 background-position: 50% 70%
 background-size: 100%
 
-# To get changes from one branch into another, you .blue[merge] them.
+# Para incorporar los cambios de una rama a otra, realizamos una operación de .blue[merge].
 
 ---
 background-image: url(assets/img/file_management_21.png)
 background-position: 50% 70%
 background-size: 100%
 
-# So, this commit combines all the commits from both branches.
+# Así, este *commit* combina todos los commits de ambas ramas.
 
 ---
 background-image: url(assets/img/merge.gif)
@@ -342,24 +329,24 @@ background-size: 90%
 ---
 class: left, middle
 
-# .blue[branch] - a moveable label that points to a commit
+# .blue[rama o *branch*] - una etiqueta móvil que apunta hacia un *commit*.
 
-# .blue[merge] - the combination of commits from two or more branches
+# .blue[merge] - la combinación de commits de dos o más ramas.
 
 ---
 class: inverse, center, middle
 
-# .larger[4) Git helps you back up your work]
+# .larger[4) Git permite guardar copias del trabajo]
 
 ---
 class: left, middle
 
-# Everyone knows you should back up your work regularly.
+# Todos sabemos que el trabajo debe respaldarse regularmente.
 
 ---
 class: left, middle
 
-# Ideally, to somewhere that is not the same place as your computer.
+# Idealmente, en un lugar que no sea el mismo que tu computadora.
 
 ---
 background-image: url(assets/img/file_management_22.png)
@@ -368,16 +355,17 @@ background-size: 100%
 ---
 class: left, middle
 
-# Safer
+Esto permite:  
+# Más seguridad
 
-# Access from different places
+# Acceder desde diferentes lugares.
 
-# Shared 
+# Compartir los archivos
 
 ---
 class: left, middle
 
-# In Git this place is called a .blue[remote]
+# En Git, este lugar se llama un .blue[remoto]
 
 ---
 background-image: url(assets/img/github_logo.png)
@@ -387,7 +375,7 @@ background-size: cover
 ---
 class: left, middle
 
-# To get some work from a repository stored in a remote for the first time, the first thing you do is .blue[clone] the repository.
+# Para obtener un proyecto de un repositorio almacenado en un servidor remoto por primera vez, lo primero que debemos hacer es .blue[clonar] el repositorio. 
 
 ---
 background-image: url(assets/img/file_management_23.png)
@@ -406,7 +394,7 @@ class: middle, right
 background-image: url(assets/img/file_management_26.png)
 background-size: 100%
 
-# Now everyone<br>has the repo on<br>their computer
+# Ahora todos <br>tienen el repositorio<br>en su computadora.
 
 ---
 class: middle, right
@@ -418,14 +406,14 @@ class: middle, right
 background-image: url(assets/img/file_management_28.png)
 background-size: 100%
 
-# Ligong can send<br>his changes to<br>the remote
+# Ligong puede enviar<br>sus cambios<br> al remoto
 
 ---
 class: middle, right
 background-image: url(assets/img/file_management_28.png)
 background-size: 100%
 
-# this is known<br>as a .blue[push]
+# Esto se conoce como <br> realizar un .blue[*push*]
 
 ---
 class: bottom, right
@@ -438,14 +426,14 @@ class: bottom, right
 background-image: url(assets/img/file_management_32.png)
 background-size: 100%
 
-# Now Shakia's<br>repo is behind<br>the remote.
+# Ahora el repositorio de Shakia<br> está detrás del<br> remoto.
 
 ---
 class: bottom, right
 background-image: url(assets/img/file_management_32.png)
 background-size: 100%
 
-# To get these<br>changes, Shakia<br>can .blue[pull] them
+# Para obtener estos<br>cambios, Shakia<br>realiza un .blue[*pull*] 
 
 ---
 class: bottom, right
@@ -455,24 +443,23 @@ background-size: 100%
 ---
 class: left, middle
 
-# .blue[clone] - copy a repository from a remote location to your local computer.
+# .blue[clonar] - copiar un repositorio de un servidor remoto hacia el equipo local.
 
-# .blue[push] - send your local commit(s) to your remote
+# .blue[push] - enviar los cambios del equipo local hacia el servidor remoto.
 
-# .blue[pull] - copy the most recent version of the remote to your local computer (merge conflicts can happen).
+# .blue[pull] - copiar la versión más reciente del remoto en el equipo local (pueden ocurrir conflictos de unificación)
 
 ---
 class: inverse, center, middle
 
-# .larger[5) Git helps you collaborate]
+# .larger[5) ¡Git nos permite colaborar!]
 
 ---
 class: left, middle
 
-# When you clone a repository, you attempt to push and pull commits to the remote
+# Imagina que clonas un repositorio, intentas enviar los cambios (*push*) al remoto
 
-# What could go wrong?
-
+# ¿qué podría salir mal?
 ---
 background-image: url(assets/img/too_many_cooks.png)
 background-size: cover
@@ -480,16 +467,19 @@ background-size: cover
 ---
 class: left, middle
 
-# Instead of cloning someone else's repo, you can .blue[fork] the repo.
+# En vez de clonar el repositorio de alguien más, podemos .blue[bifurcar] (*fork*) el repositorio
 
 ---
 class: left, middle
 
-# When you .blue[fork] a repo, you create a copy of it on your GitHub account. (this is not a clone) 
+# Cuando .blue[bifurcamos] un repositorio, creamos una copia de él en nuestra cuenta de Github. 
+- Esta copia no es lo mismo que clonar el repositorio.
 
-# Now you have a remote you can clone and commit changes to.
+# Ahora tenemos un remoto que podemos clonar y al cual podemos hacerle cambios.
 
-# This positions you to request that the repo owner to merge a branch of your forked repo into their main branch, i.e., a .blue[pull request].
+---
+class: left, middle
+# Esto nos permite realizar una petición al dueño del repositorio para mezclar una rama de nuestra bifurcación a su rama principal, esto es, hacer un .blue[*pull request*].
 
 ---
 background-image: url(assets/img/fork-and-clone_1.png)
@@ -539,7 +529,7 @@ background-size: 100%
 ---
 class: inverse, middle, center
 
-# .larger[Git is a lot. Where should<br>I start?]
+# Git es muy amplio. ¿Por dónde<br>empiezo? 
 
 ---
 
@@ -547,7 +537,7 @@ background-image: url(assets/img/github_account_1.png)
 background-position: 50% 70%
 background-size: 80%
 
-# Go to [https://github.com/](https://github.com/) and click "Sign up"
+# Vamos a [https://github.com/](https://github.com/) 
 
 ---
 background-image: url(assets/img/github_account_2.png)
@@ -560,172 +550,175 @@ background-position: 40% 50%
 ---
 class: inverse, center, middle
 
-# .larger[Make a pull request]
+# .larger[Realizar un *pull request*]
 
 ---
 
-# Instrucciones
+# Ejercicio práctico
 
 Las siguientes diapositivas contienen instrucciones de cómo realizar un pull request en Github.com. 
 
-# Vamos a realizar un ejercicio similar
+## Vamos a realizar un ejercicio similar
 
 ---
 background-image: url(assets/img/github_account_3.png)
 
-# Go to [my GitHub](https://github.com/bcjaeger)
+# Vamos a [mi cuenta de GitHub](https://github.com/bcjaeger)
 
 ---
 background-image: url(assets/img/github_account_4.png)
 
-# Click 'Repositories' near the top of the page
+# Click en 'Repositorios' al inicio de la página.
 
 ---
 background-image: url(assets/img/github_account_5.png)
 
-# Search 'seminar-git' (maybe already at top)
+# Buscamos el repositorio 'seminar-git' 
 
 ---
 background-image: url(assets/img/github_account_6.png)
 
-# Click on the 'seminar-git' repository
+# Clic en el repositorio 'seminar-git'
 
 ---
 background-image: url(assets/img/github_account_7.png)
 
-# Click on index.Rmd (don't click index.html)
+# Clic en index.Rmd (no en index.html)
 
 ---
 background-image: url(assets/img/github_account_8.png)
 
-# Click the pencil to .blue[fork] the repo
+# Clic en el lápiz para .blue[bifurcar] el repositorio
 
 
 ---
 background-image: url(assets/img/github_account_9.png)
 
-# If you see this, you are in the right place!
+# Si ves esto, ¡estás en el lugar adecuado!
 
 ---
 class: left, middle
-# If you don't have that screen, don't worry. Clicking the pencil has forked the repo and created a new branch. Check your profile page.
+# Si no ves esta pantalla, no te preocupes. Hacer un clic en el lapiz ha bifurcado el repositorio y creado una nueva rama. Revisa la página de tu perfil.
 
 
 ---
 background-image: url(assets/img/github_account_10.png)
 
-# Scroll down to about here.
+# Navega hasta este punto. 
 
 ---
 background-image: url(assets/img/github_account_11.png)
 
-# Add your own adjectives or exclamations
+# Agrega tus propios cambios.
 
 ---
 background-image: url(assets/img/github_account_12.png)
 
-# Document, then click propose changes
+# Docuemnta, luego haz clic en 'Proponer cambios'
 
 
 ---
 background-image: url(assets/img/github_account_13.png)
 
-# Review, then click 'create pull request'
+# Revisa, y después, haz clic en 'Create a pull request'
 
 ---
 class: inverse, middle, center
 
-# .larger[Make a repo on GitHub]
+# .larger[Crear un repositorio en Github]
 
 ---
 background-image: url(assets/img/github_account_14.png)
 background-size: 90%
 
-# click 'Repositories' on your profile page
+# Clic en 'Repositories' en tu perfil.
 
 ---
 
 background-image: url(assets/img/github_account_15.png)
 background-size: 90%
 
-# click 'new'
+# Clic en 'New'
 
 ---
 
 background-image: url(assets/img/github_account_16.png)
 background-size: 70%
 
-# Name your repo
+# Nombra tu repositorio
 
 ---
 
 background-image: url(assets/img/github_account_17.png)
 background-size: 70%
 
-# Give it a description
+# Edita una descripción del repositorio
 
 ---
 background-image: url(assets/img/github_account_18.png)
 background-size: 70%
 
-# Make it public or private
+# Hazlo público o privado
 
 ---
 background-image: url(assets/img/github_account_19.png)
 background-size: 70%
 
-# Initialize with a README file
+# Inicializa el proyecto con un archivo de README 
 
 ---
 background-image: url(assets/img/github_account_20.png)
 background-size: 70%
 
-# Click 'Create  repository'
+# Clic en  'Create  repository'
 
 ---
 background-image: url(assets/img/github_account_21.png)
 background-size: 90%
 
-# You did it!
+# ¡Lo lograste!
 
 ---
 
-# Jargon
+# Jerga
 
-.blue[repository (repo)] - your project folder
+.blue[repositorio (repo)] - el directorio de tu proyecto
 
-.blue[commit] - a snapshot of your repository
+.blue[commit] - una captura del estado del repositorio
 
-.blue[hash] - an id for your commit
+.blue[hash] - un identificador para una confirmación o *commit*
 
-.blue[checkout] - time travel to a specific commit
+.blue[checkout] - Viajar en el tiempo a una confirmación anterior
 
-.blue[branch] - a movable label that points to a commit
+.blue[rama o *branch*] - una etiqueta móvil que apunta hacia un *commit*
 
-.blue[merge] - combining two branches
+.blue[merge] - combinar dos ramas
 
-.blue[remote] - a computer with the repository on it
+.blue[remote] - un servidor, o equipo remoto, con una copia del proyecto
 
-.blue[clone] - get the repository from the remote for the first time
+.blue[clone] - obtener el repositorio de un servidor remoto por primera vez
 
-.blue[push] - send commits to a remote
+.blue[push] - enviar commits a un servidor remoto
 
-.blue[pull] - get commits from a remote
+.blue[pull] - obtener los cambios del servidor remoto
 
-.blue[fork] - copy a remote to your GitHub profile.
+.blue[fork] - crear una bifurcación de un repositorio en nuestra cuenta de Github.
 
 ---
 background-image: url(assets/img/usethis_logo.png)
 background-size: 30%
-background-position: 47.5% 13%
+background-position: 60% 13%
 
-# .larger[Exercises]
+# .larger[Ejercicios]
 
 1. Create a project that uses Git and GitHub
 2. Create a project from GitHub (fork and clone)
 3. Initiate pull requests!
 
+1. Crear un proyecto que utilice Git y Github
+2. Crear un proyecto de manera local desde Github (bifurcar y clonar)
+3. ¡Colaborar a través de *pull requests*!
 ---
 class: center, middle
 
-# .larger[Thank you!]
+# .larger[¡Muchas gracias!]
