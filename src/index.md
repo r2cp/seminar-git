@@ -87,7 +87,7 @@ class: inverse, center, middle
 # .larger[Git para<br/>principiantes]
 
 ---
-background-image: url(assets/img/Linus_Torvalds_2.jpg)
+background-image: url(assets/img/unfriendly.jpg)
 background-size: 100%
 class: left, middle, inverse
 
